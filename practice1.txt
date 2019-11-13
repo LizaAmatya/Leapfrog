@@ -1,11 +1,4 @@
 Name: Liza Amatya
 Kantipur Engineering College
 Hobby: Music, novel reading,dance
-Age: 22
-
-
-
-
-
-
-
+Age: 21
