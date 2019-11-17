@@ -1,0 +1,148 @@
+.header-top-wrapper {
+    background-color: #76c7c1;
+}
+
+.header-top {
+    height: 70px;
+    width: 1180px;
+    margin: 0 auto;
+}
+
+.header-top-left {
+    float: left;
+    width: 130px;
+}
+
+.header-top-right {
+    float: right;
+    width: 1050px;
+}
+
+.ruler {
+    background-image: url('../images/ruler.png');
+    height: 10px;
+}
+
+.header-bottom-wrapper {
+    background-color: #ececec;
+}
+
+.header-bottom {
+    height: 80px;
+    width: 1180px;
+    margin: 0 auto;
+    padding-top: 32px;
+}
+
+.header-bottom-left {
+    float: left;
+}
+
+.header-bottom-right {
+    float: right;
+}
+
+.arrow-wrapper {
+    background-color: #f3f3f3;
+}
+
+.header-arrow {
+    width: 1180px;
+    margin: 0 auto;
+    height: 12px;
+    background-image: url('../images/bottom-of-header-img.png');
+    background-repeat: no-repeat;
+}
+
+.row1-wrapper {
+    background-color: #f3f3f3;
+}
+
+.row1 {
+    width: 1180px;
+    margin: 0 auto;
+    padding-bottom: 72px;
+}
+
+.desc {
+    padding-top: 44px;
+    padding-bottom: 72px;
+}
+
+.col3-left {
+    float: left;
+}
+
+.left {
+    float: left;
+    width: 295px;
+}
+
+.col3-right {
+    float: right;
+    width: 885px;
+}
+
+.main {
+    float: left;
+    width: 570px;
+}
+
+.right {
+    float: right;
+    width: 295px;
+}
+
+.ruler-2 {
+    background-image: url('../images/ruler-2.png');
+    height: 18px;
+}
+
+.row2-wrapper {
+    background-color: #ececec;
+    height: 380px;
+}
+
+.team-wrapper {
+    width: 1180px;
+    margin: 0 auto;
+}
+
+.card-wrapper {
+    width: 1180px;
+    height: 220px;
+}
+
+.row3-wrapper {
+    background-color: #f3f3f3;
+}
+
+.row3 {
+    width: 1180px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.row3-top {
+    padding-top: 100px;
+}
+
+.footer-top-wrapper {
+    background-color: #76c7c1;
+}
+
+.footer-top {
+    width: 1180px;
+    margin: 0 auto;
+    height: 280px;
+}
+
+.footer-bottom-wrapper {
+    background-color: #6bb4ad;
+}
+
+.footer-bottom {
+    width: 1180px;
+    margin: 0 auto;
+    height: 50px;
+}
