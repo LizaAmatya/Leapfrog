@@ -1,0 +1,273 @@
+.menu ul {
+    list-style: none;
+    float: right;
+}
+
+.menu ul li {
+    float: left;
+    font-size: 16px;
+    padding-top: 34px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    padding-right: 1em;
+}
+
+.menu a:hover {
+    background-image: url('../images/click-bcg2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 8em 2.25em;
+    padding-left: 3em;
+    padding-top: 2em;
+    padding-right: 3em;
+    padding-bottom: 2em;
+}
+
+.search a img {
+    position: relative;
+    z-index: 1;
+    background-image: none;
+    padding-left: 1em;
+    /* padding-right: 0px; */
+}
+
+.search #search {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    top: 60px;
+    right: 100px;
+    border: solid 2px crimson;
+}
+
+.search a:hover {
+    background-image: none;
+    padding: 0px;
+    /* display: block; */
+}
+
+.search:hover #search {
+    display: block;
+}
+
+.header-bottom-left {
+    color: #898f8f;
+}
+
+.header-bottom-right ul {
+    float: right;
+    line-height: 36px;
+}
+
+.header-bottom-right ul li {
+    float: left;
+    font-size: 14px;
+    list-style: none;
+    color: #898f8f;
+}
+
+.header-bottom-right ul li a {
+    text-decoration: none;
+    padding-right: 5px;
+    color: #898f8f;
+}
+
+.header-bottom-right ul li a::after {
+    content: "/";
+    color: #898f8f;
+}
+
+.header-bottom-right a:hover {
+    color: blue;
+}
+
+.footer-left {
+    float: left;
+}
+
+.footer-right {
+    float: right;
+}
+
+.footer-col1 {
+    float: left;
+    width: 25em;
+    padding-right: 20px;
+    padding-top: 10px;
+}
+
+.footer-col2 {
+    float: right;
+    width: 10em;
+    padding-right: 20px;
+    padding-top: 32px;
+}
+
+.footer-col3 {
+    float: left;
+    width: 10em;
+    padding-right: 20px;
+    padding-top: 32px;
+}
+
+.footer-col4 {
+    float: right;
+    width: 25em;
+    padding-top: 32px;
+}
+
+.footer-col1 p.footer-col1-text {
+    padding-bottom: 25px;
+    line-height: 24px;
+    font-size: 14px;
+    padding-top: 5px;
+    color: #edf7ff;
+}
+
+.footer-col1 p.footer-info {
+    padding-bottom: 15px;
+    font-size: 14px;
+    color: #edf7ff;
+}
+
+.footer-col2 p {
+    padding-bottom: 28px;
+    font-size: 24px;
+    color: #437f7f;
+}
+
+.footer-col2 ul {
+    list-style-image: url('../images/list-arrow-footer.png');
+}
+
+.footer-col2 li {
+    line-height: 24px;
+    font-size: 14px;
+    color: #edf7ff;
+}
+
+.footer-col3 p {
+    padding-bottom: 28px;
+    font-size: 24px;
+    color: #437f7f;
+}
+
+.footer-col3 ul {
+    list-style-image: url('../images/list-arrow-footer.png');
+}
+
+.footer-col3 li {
+    line-height: 24px;
+    font-size: 14px;
+    color: #edf7ff;
+}
+
+.blog-header {
+    padding-bottom: 24px;
+}
+
+.blog-header span {
+    font-size: 22px;
+    color: #edf7ff;
+}
+
+.blog1,
+.blog2 {
+    /* height: 70px; */
+    padding-bottom: 10px;
+    width: 25em;
+}
+
+.blog-img1,
+.blog-img2 {
+    float: left;
+    padding-right: 20px;
+}
+
+.blog-text1,
+.blog-text2 {
+    width: 25em;
+    text-align: left;
+    font-size: 14px;
+    line-height: 24px;
+    color: #edf7ff;
+}
+
+.blog-date {
+    color: #5ea09c;
+}
+
+.footer-bottom-left {
+    width: 25%;
+    float: left;
+    /* height: 50px; */
+}
+
+.footer-bottom-left p {
+    font-size: 14px;
+    padding-top: 20px;
+    color: #edf7ff;
+}
+
+.footer-bottom-right {
+    float: right;
+    width: 75%;
+    /* height: 50px; */
+}
+
+.footer-bottom-right .social-footer ul {
+    float: right;
+    list-style: none;
+}
+
+.footer-bottom-right .social-footer ul li {
+    float: left;
+    /* height: 40px; */
+    padding-right: 32px;
+    padding-top: 5px;
+}
+
+.slideshow img {
+    position: relative;
+    z-index: 1;
+}
+
+.project-slideshow {
+    display: none;
+}
+
+.slide-text p {
+    position: absolute;
+    z-index: 2;
+    bottom: 10px;
+    text-align: center;
+}
+
+.slideshow-btn .slider-prev img {
+    /* top: 50%; */
+    position: absolute;
+    z-index: 2;
+}
+
+
+}
+
+/* @media screen and (max-width:500px) {
+    .header-wrapper,
+    .footer-wrapper {
+        width: 100%;
+    }
+    .menu {
+        display: none;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .header-wrapper,
+    .footer-wrapper {
+        width: 80%;
+    }
+} */
