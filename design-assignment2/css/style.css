@@ -233,41 +233,67 @@
 .slideshow {
     position: relative;
     z-index: 1;
+    border: 1px solid black;
 }
 
 .project-slideshow {
     display: none;
 }
 
-.slide-text p {
+.project-slideshow1 {
+    width: 100%;
+    height: auto;
+}
+
+.slide-text1 p {
+    width: 100%;
     position: absolute;
     z-index: 2;
-    /* bottom: 10px; */
+    left: 0;
+    bottom: 30%;
     text-align: center;
+    border: 1px solid black;
 }
 
 .slideshow-btn .slider-prev {
-    /* top: 50%; */
+    top: 45%;
     position: absolute;
     z-index: 3;
+    left: 0;
+    border: 1px solid black;
+}
+
+.slideshow-btn .slider-next {
+    top: 45%;
+    position: absolute;
+    z-index: 3;
+    right: 0;
+    border: 1px solid black;
+}
+
+.slidebar-slideshow {
+    display: none;
+}
+
+.sidebar-gallery {
+    display: none;
 }
 
 
 }
-
-/* @media screen and (max-width:500px) {
+@media screen and (max-width:500px) {
     .header-wrapper,
     .footer-wrapper {
         width: 100%;
     }
-    .menu {
-        display: none;
-    }
+    /* .menu {
+        display: none; */
 }
 
+}
 @media screen and (max-width:800px) {
     .header-wrapper,
     .footer-wrapper {
         width: 80%;
     }
-} */
+}

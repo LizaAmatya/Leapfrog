@@ -103,3 +103,24 @@
     width: 90%;
     margin: 0 auto;
 }
+
+.image-slider-row1 {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.image-slider-row2 {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.image-slider-row2 .slideshow-col1 {
+    float: left;
+    width: 75%;
+}
+
+
+/* .image-slider-row2 .slideshow-col2 {
+    float: right;
+    width: 25%;
+} */
