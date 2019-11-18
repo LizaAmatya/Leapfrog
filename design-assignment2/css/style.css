@@ -230,7 +230,7 @@
     padding-top: 5px;
 }
 
-.slideshow img {
+.slideshow {
     position: relative;
     z-index: 1;
 }
@@ -242,14 +242,15 @@
 .slide-text p {
     position: absolute;
     z-index: 2;
-    bottom: 10px;
+    /* bottom: 10px; */
     text-align: center;
 }
 
-.slideshow-btn .slider-prev img {
+.slideshow-btn .slider-prev {
     /* top: 50%; */
     position: absolute;
-    z-index: 2;
+    z-index: 3;
+    border: black 1px solid;
 }
 
 
