@@ -216,6 +216,7 @@ p.why {
 
 .card-bcg p.img-text {
     display: none;
+    height: auto;
 }
 
 .card-bcg:hover img {
@@ -272,7 +273,7 @@ p.why {
     float: left;
 }
 
-.row3-col1 p {
+.row3-col1 span {
     font-size: 16px;
     font-weight: bold;
     color: #828888;
