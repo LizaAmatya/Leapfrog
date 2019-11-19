@@ -217,6 +217,7 @@ p.why {
 .card-bcg p.img-text {
     display: none;
     height: auto;
+    overflow: hidden;
 }
 
 .card-bcg:hover img {
