@@ -35,6 +35,13 @@
     border-radius: 10px;
 }
 
+.menu a.active {
+    background: rgb(101, 247, 199);
+    background: linear-gradient(180deg, rgba(101, 247, 199, 1) 35%, rgba(77, 224, 204, 1) 100%);
+    border-radius: 10px;
+    color: white;
+}
+
 .row1-wrapper {
     background: rgb(101, 247, 199);
     background: linear-gradient(180deg, rgba(101, 247, 199, 1) 35%, rgba(77, 224, 204, 1) 100%);
@@ -72,7 +79,7 @@
 
 .service ul li figure img {
     /* padding-left: 75px;
-    /* padding-right: 49px; */
+/* padding-right: 49px; */
     padding-bottom: 27px;
     display: block;
     margin: 0 auto;
@@ -86,11 +93,11 @@
 
 
 /* .service li a {
-    font-size: 15px;
-    font-weight: medium;
-    text-decoration: none;
-    text-align: center;
-    padding-left: 70px;
+font-size: 15px;
+font-weight: medium;
+text-decoration: none;
+text-align: center;
+padding-left: 70px;
 } */
 
 .service p {
@@ -98,7 +105,7 @@
     text-align: center;
     font-size: 13px;
     text-align: center;
-    line-height: 16px;
+    line-height: 18px;
     color: rgb(146, 155, 160);
 }
 
@@ -113,8 +120,6 @@
 }
 
 .need-service {
-    font-size: 20px;
-    color: rgb(255, 255, 255);
     text-align: center;
     padding: 82px 0;
 }
@@ -123,6 +128,88 @@
     text-decoration: none;
     padding: 25px 49px 31px 62px;
     font-size: 20px;
+    color: white;
+    background: rgb(255, 103, 84);
+    background: linear-gradient(180deg, rgba(255, 103, 84, 1) 35%, rgba(255, 56, 88, 1) 100%);
+    border-radius: 10px;
+}
+
+.row3-wrapper {
+    background: rgb(255, 103, 84);
+    background: linear-gradient(180deg, rgba(255, 103, 84, 1) 35%, rgba(255, 56, 88, 1) 100%);
+}
+
+.row3-text {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    padding-top: 91px;
+    padding-bottom: 34px;
+}
+
+.row3-para p {
+    font-size: 13px;
+    color: rgb(255, 255, 255);
+    line-height: 18px;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.screen {
+    padding-top: 145px;
+    padding-bottom: 26px;
+}
+
+
+/* .img-merge {
+    margin: 0;
+} */
+
+.phone {
+    float: left;
+    width: 40%;
+}
+
+.left-phn {
+    padding-top: 68px;
+    float: left;
+}
+
+.right-phn {
+    float: right;
+}
+
+.row4-info {
+    float: right;
+    width: 55%;
+}
+
+.responsive {
+    font-size: 40px;
+    color: rgb(63, 66, 68);
+    padding-top: 147px;
+    padding-bottom: 50px;
+}
+
+.row4-para p {
+    font-size: 15px;
+    color: rgb(146, 155, 160);
+    line-height: 22px;
+    text-align: left;
+    width: 35em;
+}
+
+.order {
+    /* text-align: center; */
+    padding: 86px 0;
+    padding-bottom: 118px;
+}
+
+.order a {
+    text-decoration: none;
+    padding: 25px 77px 34px 66px;
+    font-size: 15px;
     color: white;
     background: rgb(255, 103, 84);
     background: linear-gradient(180deg, rgba(255, 103, 84, 1) 35%, rgba(255, 56, 88, 1) 100%);
