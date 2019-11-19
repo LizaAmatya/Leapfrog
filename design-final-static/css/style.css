@@ -1,0 +1,130 @@
+.header {
+    background-color: white;
+}
+
+.logo {
+    float: left;
+    padding-top: 39px;
+    padding-bottom: 37px;
+}
+
+.menu ul {
+    float: right;
+    list-style: none;
+    padding-top: 45px;
+}
+
+.menu ul li {
+    float: left;
+}
+
+.menu li a {
+    padding-top: 18px;
+    padding-bottom: 16px;
+    padding-right: 26px;
+    padding-left: 26px;
+    font-size: 15px;
+    color: #656869;
+    text-decoration: none;
+    text-align: center;
+}
+
+.menu li a:hover {
+    background: rgb(101, 247, 199);
+    background: linear-gradient(180deg, rgba(101, 247, 199, 1) 35%, rgba(77, 224, 204, 1) 100%);
+    border-radius: 10px;
+}
+
+.row1-wrapper {
+    background: rgb(101, 247, 199);
+    background: linear-gradient(180deg, rgba(101, 247, 199, 1) 35%, rgba(77, 224, 204, 1) 100%);
+}
+
+.row1-text {
+    font-weight: lighter;
+    font-size: 60px;
+    text-align: center;
+    color: white;
+    padding-top: 380px;
+}
+
+.row1 .showme {
+    padding-bottom: 250px;
+    text-align: center;
+    padding-top: 55px;
+}
+
+.row1 .showme a {
+    text-decoration: none;
+    font-weight: medium;
+    padding: 26px 59px 33px 65px;
+    font-size: 15px;
+    color: white;
+    background: rgb(255, 103, 84);
+    background: linear-gradient(180deg, rgba(255, 103, 84, 1) 35%, rgba(255, 56, 88, 1) 100%);
+    border-radius: 10px;
+}
+
+.service ul {
+    list-style: none;
+    padding-top: 86px;
+}
+
+.service ul li figure img {
+    /* padding-left: 75px;
+    /* padding-right: 49px; */
+    padding-bottom: 27px;
+    display: block;
+    margin: 0 auto;
+}
+
+.service ul li {
+    float: left;
+    width: 25%;
+    padding-right: 54px;
+}
+
+
+/* .service li a {
+    font-size: 15px;
+    font-weight: medium;
+    text-decoration: none;
+    text-align: center;
+    padding-left: 70px;
+} */
+
+.service p {
+    padding-top: 48px;
+    text-align: center;
+    font-size: 13px;
+    text-align: center;
+    line-height: 16px;
+    color: rgb(146, 155, 160);
+}
+
+.service figcaption {
+    text-align: center;
+}
+
+@media screen and (min-width:1173px) {
+    .page {
+        width: 100%;
+    }
+}
+
+.need-service {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 82px 0;
+}
+
+.need-service a {
+    text-decoration: none;
+    padding: 25px 49px 31px 62px;
+    font-size: 20px;
+    color: white;
+    background: rgb(255, 103, 84);
+    background: linear-gradient(180deg, rgba(255, 103, 84, 1) 35%, rgba(255, 56, 88, 1) 100%);
+    border-radius: 10px;
+}

@@ -6,7 +6,7 @@
 
 .header-top-wrapper {
     background-color: #76c7c1;
-    height: 4.375em;
+    /* height: 4.375em; */
 }
 
 .header-top {
@@ -97,30 +97,43 @@
 
 .body-wrapper {
     background-color: #f3f3f3;
+    /* height: auto; */
 }
 
 .main-body {
     width: 90%;
     margin: 0 auto;
+    display: block;
+}
+
+.main-body2 {
+    width: 90%;
+    margin: 0 auto;
+    background-color: #f3f3f3;
 }
 
 .image-slider-row1 {
     width: 90%;
     margin: 0 auto;
+    /* height: auto; */
+    padding-bottom: 50px;
 }
 
 .image-slider-row2 {
     width: 90%;
     margin: 0 auto;
+    /* height: auto; */
 }
 
-.image-slider-row2 .slideshow-col1 {
+.image-slider-row2 .slideshow-row2col1 {
     float: left;
-    width: 75%;
+    width: 45%;
+    border: black 1px solid;
+    padding: 1em;
 }
 
-
-/* .image-slider-row2 .slideshow-col2 {
+.image-slider-row2 .slideshow-row2col2 {
     float: right;
-    width: 25%;
-} */
+    width: 45%;
+    border: black 1px solid;
+}
