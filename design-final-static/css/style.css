@@ -200,19 +200,22 @@ li .middle-screen {
     width: 40%;
     position: relative;
     padding-left: 8em;
-}
-
-.left-phn {
-    padding-top: 4.25em;
-    float: left;
-    z-index: 50;
+    z-index: 10;
 }
 
 .right-phn {
     float: right;
     position: absolute;
-    top: 143px;
-    z-index: 51;
+    top: 8.9em;
+    z-index: 11;
+    right: 1.5em;
+}
+
+.left-phn {
+    padding-top: 4.25em;
+    position: absolute;
+    float: left;
+    z-index: 12;
 }
 
 .row4-info {
