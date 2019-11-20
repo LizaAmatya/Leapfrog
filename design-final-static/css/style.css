@@ -104,7 +104,6 @@ padding-left: 70px;
     padding-top: 48px;
     text-align: center;
     font-size: 13px;
-    text-align: center;
     line-height: 18px;
     color: rgb(146, 155, 160);
 }
@@ -252,4 +251,125 @@ li .middle-screen {
     background: rgb(255, 103, 84);
     background: linear-gradient(180deg, rgba(255, 103, 84, 1) 35%, rgba(255, 56, 88, 1) 100%);
     border-radius: 10px;
+}
+
+.row5-wrapper {
+    background: rgb(101, 247, 199);
+    background: linear-gradient(180deg, rgba(101, 247, 199, 1) 35%, rgba(77, 224, 204, 1) 100%);
+}
+
+.row5-text {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    padding-top: 91px;
+    padding-bottom: 34px;
+}
+
+.row5-para p {
+    font-size: 13px;
+    color: rgb(255, 255, 255);
+    line-height: 18px;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 9.125em;
+}
+
+nav {
+    text-align: center;
+}
+
+.service-menu ul {
+    list-style: none;
+    padding-top: 7.1875em;
+    padding-bottom: 3.5em;
+}
+
+.service-menu ul li {
+    display: inline;
+}
+
+.service-menu li a {
+    padding-right: 70px;
+    padding-left: 26px;
+    font-size: 15px;
+    color: rgb(63, 66, 68);
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+}
+
+.service-menu li a:hover {
+    color: white;
+}
+
+.service-menu a.active {
+    color: white;
+}
+
+.service-card {
+    padding-bottom: 3.5em;
+}
+
+.service-card ul {
+    list-style: none;
+}
+
+.service-card ul li {
+    float: left;
+    padding-right: 1em;
+    padding-bottom: 2em;
+}
+
+.service-card img {
+    border: 1px #2a4750;
+}
+
+.card {
+    background-color: white;
+}
+
+.card figcaption {
+    font-size: 15px;
+    color: rgb(63, 66, 68);
+    text-align: center;
+    padding-top: 1.5em;
+    font-weight: medium;
+}
+
+.service-card .card p {
+    padding-top: 1.5em;
+    padding-left: 4em;
+    padding-bottom: 2em;
+    text-align: center;
+    font-size: 13px;
+    line-height: 18px;
+    color: rgb(146, 155, 160);
+    width: 23.185em;
+}
+
+.arrow-down {
+    text-align: center;
+    padding-bottom: 3.5em;
+}
+
+.row6-wrapper {
+    background: #233537;
+}
+
+.row6 {
+    text-align: center;
+    padding-left: 4.5em;
+}
+
+.row6 ul {
+    list-style: none;
+}
+
+.row6 ul li {
+    float: left;
+    padding-top: 5.125em;
+    padding-right: 5em;
+    padding-bottom: 2em;
 }
