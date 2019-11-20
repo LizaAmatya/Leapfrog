@@ -1,3 +1,7 @@
+/* * {
+    outline: 1px dotted red;
+} */
+
 .header {
     background-color: white;
 }
@@ -18,7 +22,7 @@
     float: left;
 }
 
-.menu li a {
+.menu ul li a {
     padding-top: 18px;
     padding-bottom: 16px;
     padding-right: 26px;
@@ -29,10 +33,19 @@
     text-align: center;
 }
 
+.menu li {
+    margin-right: 5px;
+}
+
+.menu ul li:nth-last-child(1) {
+    margin-right: 0;
+}
+
 .menu li a:hover {
     background: rgb(101, 247, 199);
     background: linear-gradient(180deg, rgba(101, 247, 199, 1) 35%, rgba(77, 224, 204, 1) 100%);
     border-radius: 10px;
+    color: white;
 }
 
 .menu a.active {
@@ -52,18 +65,18 @@
     font-size: 60px;
     text-align: center;
     color: white;
-    padding-top: 380px;
+    padding-top: 250px;
 }
 
 .row1 .showme {
     padding-bottom: 250px;
     text-align: center;
-    padding-top: 55px;
+    padding-top: 65px;
 }
 
 .row1 .showme a {
     text-decoration: none;
-    font-weight: medium;
+    /* font-weight: medium; */
     padding: 26px 59px 33px 65px;
     font-size: 15px;
     color: white;
@@ -89,6 +102,10 @@
     float: left;
     width: 25%;
     padding-right: 54px;
+}
+
+.service ul li:nth-last-child(1) {
+    padding-right: 0;
 }
 
 
@@ -273,7 +290,7 @@ li .middle-screen {
     text-align: center;
     width: 70%;
     margin: 0 auto;
-    padding-bottom: 9.125em;
+    padding-bottom: 118px;
 }
 
 nav {
@@ -282,7 +299,7 @@ nav {
 
 .service-menu ul {
     list-style: none;
-    padding-top: 7.1875em;
+    /* padding-top: 7.1875em; */
     padding-bottom: 3.5em;
 }
 
@@ -330,12 +347,12 @@ nav {
     background-color: white;
 }
 
-.card figcaption {
+.card p {
     font-size: 15px;
     color: rgb(63, 66, 68);
     text-align: center;
     padding-top: 1.5em;
-    font-weight: medium;
+    /* font-weight: medium; */
 }
 
 .service-card .card p {
@@ -346,7 +363,7 @@ nav {
     font-size: 13px;
     line-height: 18px;
     color: rgb(146, 155, 160);
-    width: 23.185em;
+    width: 370px;
 }
 
 .arrow-down {
@@ -370,6 +387,436 @@ nav {
 .row6 ul li {
     float: left;
     padding-top: 5.125em;
-    padding-right: 5em;
+    padding-right: 10em;
     padding-bottom: 2em;
+}
+
+.row6 ul li:nth-last-child(1) {
+    padding-right: 0;
+}
+
+.stats figure img {
+    padding-bottom: 24px;
+}
+
+.stats div {
+    font-size: 32px;
+    color: rgb(255, 255, 255);
+    padding-bottom: 16px;
+}
+
+.stats p {
+    font-size: 13px;
+    color: rgb(16, 202, 183);
+    padding-bottom: 3.5em;
+}
+
+.row7-wrapper {
+    background: white;
+}
+
+.row7-text {
+    font-size: 40px;
+    color: rgb(63, 66, 68);
+    text-align: center;
+    padding-top: 91px;
+    padding-bottom: 34px;
+}
+
+.row7-para p {
+    font-size: 13px;
+    color: rgb(146, 155, 160);
+    line-height: 18px;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 9.125em;
+}
+
+.team-card {
+    padding-bottom: 3.5em;
+}
+
+.team-card ul {
+    list-style: none;
+}
+
+.team-card ul li {
+    float: left;
+    /* padding-right: 10px; */
+    margin-right: 30px;
+    padding-bottom: 2em;
+}
+
+.team-card ul li:nth-last-child(1) {
+    margin-right: 0;
+}
+
+.team img {
+    border: 1px #2a4750;
+}
+
+.team-card ul li {
+    background-color: #62f4c8;
+}
+
+.team span.name {
+    font-size: 20px;
+    color: rgb(63, 66, 68);
+    text-align: center;
+    /* font-weight: medium; */
+    display: block;
+    padding-top: 36px;
+}
+
+.team span.position {
+    font-size: 13px;
+    color: white;
+    text-align: center;
+    padding-top: 1.5em;
+    /* font-weight: medium; */
+    display: block;
+    padding-top: 16px;
+}
+
+.team-card .team p {
+    padding-top: 1.5em;
+    /* padding-left: 4em; */
+    padding-bottom: 36px;
+    text-align: center;
+    font-size: 13px;
+    line-height: 18px;
+    color: rgb(146, 155, 160);
+    width: 15em;
+    margin: 0 auto;
+}
+
+.row8-wrapper {
+    background: rgb(255, 103, 84);
+    background: linear-gradient(180deg, rgba(255, 103, 84, 1) 35%, rgba(255, 56, 88, 1) 100%);
+}
+
+.row8 figure.quote {
+    padding-top: 96px;
+    text-align: center;
+}
+
+.row8 .quote-info span.quote-text {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    text-align: center;
+    display: block;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.row8 .quote-info span.quoted-by {
+    padding-bottom: 51px;
+    text-align: center;
+    display: block;
+    font-size: 13px;
+    color: rgb(255, 255, 255);
+}
+
+.row8 .nav figure {
+    display: inline-block;
+}
+
+.row8 .nav {
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.row8 .nav figure.prev {
+    padding-right: 24px;
+}
+
+.row9-wrapper {
+    background: #233537;
+}
+
+.row9 p {
+    padding-top: 92px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.row9 .subscribe {
+    padding-top: 44px;
+    text-align: center;
+    padding-bottom: 90px;
+}
+
+.row9 .subscribe a {
+    font-size: 13px;
+    color: rgb(255, 255, 255);
+    border: 1px solid #54e6ca;
+    padding: 16px 32px;
+    text-decoration: none;
+}
+
+.row9 .subscribe a:hover {
+    background: #2a4750;
+}
+
+.row10 .about-img {
+    width: 50%;
+    float: left;
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+
+.row10 .about {
+    width: 50%;
+    float: right;
+}
+
+.row10 .about h2 {
+    padding-left: 8px;
+    padding-top: 136px;
+    padding-bottom: 48px;
+    color: #595b5d
+}
+
+.row10 .about p {
+    line-height: 18px;
+    font-size: 13px;
+    color: rgb(146, 155, 160);
+    text-align: left;
+    padding-bottom: 22px;
+}
+
+.row11-wrapper {
+    background: rgb(101, 247, 199);
+    background: linear-gradient(180deg, rgba(101, 247, 199, 1) 35%, rgba(77, 224, 204, 1) 100%);
+}
+
+.row11-phone {
+    float: left;
+    width: 40%;
+    padding-left: 156px;
+    padding-top: 120px;
+}
+
+.row11-phone figure img {
+    margin-bottom: -30px;
+}
+
+.row11 .modern {
+    float: right;
+    width: 60%;
+    padding-top: 210px;
+}
+
+.row11 .modern p.modern1 {
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+}
+
+.row11 .modern p.responsive {
+    font-size: 15px;
+    padding-top: 18px;
+    color: rgb(36, 54, 56);
+    /* font-weight: medium; */
+    padding-bottom: 30px;
+}
+
+.row11 .modern p.modern-text {
+    font-size: 13px;
+    color: rgb(255, 255, 255);
+    line-height: 18px;
+}
+
+.row12 {
+    padding-top: 120px;
+    padding-bottom: 64px;
+}
+
+.row12 .row12-text {
+    font-size: 40px;
+    text-align: center;
+    color: rgb(63, 66, 68);
+    padding-bottom: 50px;
+}
+
+.row12-para p {
+    font-size: 13px;
+    color: rgb(146, 155, 160);
+    line-height: 18px;
+    text-align: center;
+    padding-bottom: 82px;
+    width: 65%;
+    margin: 0 auto;
+}
+
+.row12 .clients h1 {
+    font-weight: 500;
+    padding-bottom: 52px;
+}
+
+.client {
+    background: #5ef0c9;
+    width: 31.5%;
+    margin-right: 32px;
+    float: left;
+}
+
+.client-card ul {
+    list-style: none;
+}
+
+.client-card ul li:nth-last-child(1) {
+    margin-right: 0;
+}
+
+.client span.clientname {
+    line-height: 45px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    /* font-weight: medium; */
+    display: block;
+    padding-top: 36px;
+}
+
+.client span.clientposition {
+    font-size: 13px;
+    line-height: 75px;
+    color: rgb(36, 54, 56);
+    text-align: center;
+    display: block;
+}
+
+.client p {
+    padding-top: 30px;
+    color: rgb(255, 255, 255);
+    padding-bottom: 61px;
+    text-align: center;
+    font-size: 13px;
+    line-height: 18px;
+    width: 86%;
+    margin: 0 auto;
+}
+
+.row13-wrapper {
+    background: rgb(255, 103, 84);
+    background: linear-gradient(180deg, rgba(255, 103, 84, 1) 35%, rgba(255, 56, 88, 1) 100%);
+}
+
+.row13 .row13-text {
+    font-size: 40px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding-bottom: 36px;
+    padding-top: 86px;
+}
+
+.row13-para p {
+    font-size: 13px;
+    color: rgb(255, 255, 255);
+    line-height: 18px;
+    text-align: center;
+    padding-bottom: 100px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+div .contactform {
+    padding-bottom: 92px;
+}
+
+div .contact {
+    width: 65.64%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+div .contact input[type=text] {
+    width: 31%;
+    padding: 12px 20px;
+    border: 1px solid white;
+    box-sizing: border-box;
+    background: rgb(255, 103, 84);
+    background: linear-gradient(180deg, rgba(255, 103, 84, 1) 35%, rgba(255, 56, 88, 1) 100%);
+    color: white;
+    margin-right: 30px;
+    margin-bottom: 90px;
+}
+
+#mail {
+    margin-right: 0;
+}
+
+#msg {
+    width: 100%;
+    padding: 12px 20px;
+    border: 1px solid white;
+    box-sizing: border-box;
+    background: rgb(255, 103, 84);
+    background: linear-gradient(180deg, rgba(255, 103, 84, 1) 35%, rgba(255, 56, 88, 1) 100%);
+    color: white;
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1;
+    /* Firefox */
+}
+
+ :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: white;
+}
+
+button[type=submit] {
+    font-size: 15px;
+    color: #f0f2f2;
+    border: 0px;
+    float: right;
+    background-color: #233537;
+    padding: 18px 36px;
+}
+
+.row14-wrapper {
+    background: #232e3d;
+}
+
+.row14 .map {
+    float: left;
+    width: 68%;
+    padding-top: 65px;
+    padding-left: 60px;
+}
+
+.address {
+    float: right;
+    width: 31.5%;
+    background-color: #56e8ca;
+    padding: 30px 150px 40px 50px;
+    margin-top: 112px;
+    margin-bottom: 100px;
+}
+
+.address p {
+    color: white;
+    font-size: 15px;
+    text-align: left;
+    line-height: 32px;
+}
+
+footer {
+    background: #233537;
+}
+
+footer .footer-text {
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+footer .footer-text span {
+    color: #13b6a6;
 }
