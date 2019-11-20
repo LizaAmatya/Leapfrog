@@ -347,23 +347,28 @@ nav {
     background-color: white;
 }
 
-.card p {
+.card-bcg {
+    width: 370px;
+}
+
+.card-bcg p.service-name {
     font-size: 15px;
     color: rgb(63, 66, 68);
     text-align: center;
-    padding-top: 1.5em;
+    padding-top: 24px;
+    margin: 0 auto;
     /* font-weight: medium; */
 }
 
-.service-card .card p {
+.service-card .card p.service-text {
     padding-top: 1.5em;
-    padding-left: 4em;
     padding-bottom: 2em;
     text-align: center;
     font-size: 13px;
     line-height: 18px;
     color: rgb(146, 155, 160);
-    width: 370px;
+    margin: 0 auto;
+    width: 90%;
 }
 
 .arrow-down {
