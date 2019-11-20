@@ -197,9 +197,21 @@
     .container {
         width: 768px;
     }
+    .logo {
+        padding-left: 10px;
+    }
+    .row2 .service ul li:first-child {
+        padding-left: 12px;
+    }
     .row3-wrapper {
         display: none;
     }
+    /* .row3 .screen ul li:nth-last-child(n+2) {
+        display: none;
+    }
+    .screen ul li:nth-child(1) img {
+        bottom: 2em;
+    } */
     .row4 {
         display: none;
     }
