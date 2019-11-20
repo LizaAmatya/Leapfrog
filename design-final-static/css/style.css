@@ -1,6 +1,6 @@
-/* * {
+* {
     outline: 1px dotted red;
-} */
+}
 
 .header {
     background-color: white;
@@ -737,15 +737,15 @@ div .contact {
     text-align: center;
 }
 
-div .contact input[type=text] {
-    width: 31%;
+.contact input[type=text] {
+    width: 32%;
     padding: 12px 20px;
     border: 1px solid white;
     box-sizing: border-box;
     background: rgb(255, 103, 84);
     background: linear-gradient(180deg, rgba(255, 103, 84, 1) 35%, rgba(255, 56, 88, 1) 100%);
     color: white;
-    margin-right: 30px;
+    margin-right: 32px;
     margin-bottom: 90px;
 }
 
@@ -754,13 +754,16 @@ div .contact input[type=text] {
 }
 
 #msg {
-    width: 100%;
+    width: 69%;
+    margin: 0 auto;
     padding: 12px 20px;
     border: 1px solid white;
     box-sizing: border-box;
     background: rgb(255, 103, 84);
     background: linear-gradient(180deg, rgba(255, 103, 84, 1) 35%, rgba(255, 56, 88, 1) 100%);
     color: white;
+    display: block;
+    text-align: center;
 }
 
 ::placeholder {
@@ -782,6 +785,8 @@ button[type=submit] {
     float: right;
     background-color: #233537;
     padding: 18px 36px;
+    margin-top: 36px;
+    margin-right: 122px;
 }
 
 .row14-wrapper {
