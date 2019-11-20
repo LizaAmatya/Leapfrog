@@ -154,30 +154,65 @@ padding-left: 70px;
     text-align: center;
     width: 70%;
     margin: 0 auto;
+    padding-bottom: 9.125em;
 }
 
 .screen {
-    padding-top: 145px;
-    padding-bottom: 26px;
+    padding-top: 21em;
+    padding-bottom: 1.625em;
+    position: relative;
+    z-index: 1;
 }
 
+.screen ul {
+    list-style: none;
+}
 
-/* .img-merge {
-    margin: 0;
-} */
+li .left-screen {
+    float: left;
+    padding-left: 5.5em;
+    position: absolute;
+    bottom: -1.5em;
+    z-index: 2;
+}
+
+li .right-screen {
+    float: right;
+    position: absolute;
+    z-index: 2;
+    /* left: auto; */
+    bottom: -1.5em;
+    right: 5.5em;
+}
+
+li .middle-screen {
+    position: absolute;
+    z-index: 3;
+    height: 25.3125em;
+    /* align-self: center; */
+    left: 18em;
+    right: 16.25em;
+    bottom: -2.75em;
+}
 
 .phone {
-    float: left;
+    /* float: left; */
     width: 40%;
+    position: relative;
+    padding-left: 8em;
 }
 
 .left-phn {
-    padding-top: 68px;
+    padding-top: 4.25em;
     float: left;
+    z-index: 50;
 }
 
 .right-phn {
     float: right;
+    position: absolute;
+    top: 143px;
+    z-index: 51;
 }
 
 .row4-info {
