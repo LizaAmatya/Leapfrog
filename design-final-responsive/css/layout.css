@@ -41,6 +41,7 @@
 
 .dropdown ul {
     list-style: none;
+    display: none;
 }
 
 .dropdown ul li a {
@@ -48,18 +49,6 @@
     color: black;
     font-size: 14px;
     margin: 20px;
-}
-
-.dropdown {
-    position: absolute;
-    z-index: 2;
-    top: 75px;
-    right: -380px;
-    float: right;
-    display: none;
-    background: #5de4d9c9;
-    /* padding: 20px; */
-    box-shadow: 0px 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 @media screen and (min-width:1173px) {
@@ -134,6 +123,9 @@
     .row6.container.clearfix ul li:nth-child(even) {
         padding-top: 45.5px;
     }
+    .row7 .row7-text {
+        margin: 0 10px;
+    }
     .row7 .row7-para p {
         padding-bottom: 32px;
     }
@@ -206,13 +198,81 @@
     .row3-wrapper {
         display: none;
     }
-    /* .row3 .screen ul li:nth-last-child(n+2) {
-        display: none;
+    /* .row3 .screen.clearfix {
+        padding-top: 300px;
+        padding-right: 300px;
     }
+    .row3 .screen .left-screen {
+        padding-top: 300px;
+    }
+    .row3 .screen ul li:nth-last-child(n+2) {
+        display: none;
+    } */
     .screen ul li:nth-child(1) img {
         bottom: 2em;
-    } */
+    }
     .row4 {
         display: none;
+    }
+    .row5 div.service-card.clearfix {
+        padding: 0px;
+    }
+    .row5 div.service-card ul li {
+        padding-right: 10px;
+        margin-left: 5px;
+    }
+    .row5 div.service-card ul li:nth-child(even) {
+        padding-right: 0px;
+    }
+    .row6.container.clearfix {
+        padding: 0;
+    }
+    .row6.container.clearfix ul li {
+        padding-right: 30px;
+        padding-bottom: 5px;
+        padding-top: 50px;
+        padding-left: 25px;
+    }
+    .row7 .team-card.clearfix {
+        padding: 0;
+    }
+    .row7 .team-card.clearfix {
+        padding-bottom: 0;
+        padding-left: 100px;
+    }
+    .row7 .team-card ul li {
+        padding-bottom: 0;
+        margin-bottom: 16px;
+    }
+    .row7 .team-card ul li:nth-child(n+3) {
+        display: none;
+    }
+    .row10 {
+        display: none;
+    }
+    .row11 .row11-phone {
+        padding-left: 50px;
+        /* padding-top: 60px; */
+    }
+    .row11 .modern {
+        padding-right: 20px;
+        /* padding-top: 150px; */
+    }
+    .row12.clearfix .client {
+        margin-right: 5px;
+        margin-left: 8px;
+    }
+    .row13 button[type=submit] {
+        float: none;
+        margin: 20px auto;
+    }
+    .row14 .address {
+        width: 92%;
+        float: left;
+        margin: 50px 30px 50px 30px;
+        text-align: left;
+    }
+    .row14 .map {
+        width: 100%;
     }
 }

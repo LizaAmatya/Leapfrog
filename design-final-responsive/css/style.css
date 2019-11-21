@@ -329,8 +329,8 @@ nav {
 
 .service-card ul li {
     float: left;
-    padding-right: 1em;
-    padding-bottom: 2em;
+    padding-right: 16px;
+    padding-bottom: 32px;
 }
 
 .service-card img {
