@@ -106,7 +106,7 @@ nxtBtn.addEventListener('click', function() {
 
 
 function slide() {
-    var nextIndex = (currIndex + 1) % 4;
+    var nextIndex = (currIndex + 1) % imgCount;
     // document.getElementById('slide' + currIndex).style.left = -100 + '%';
     // document.getElementById('slide' + nextIndex).style.left = 0;
     var currWrapper = currIndex * imgWidth;

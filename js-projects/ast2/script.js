@@ -1,7 +1,7 @@
 function Carousel(parentElement) {
 
     this.parentElement = parentElement;
-    // this.imgWrapperElement = null;
+    this.imgWrapperElement = null;
     this.images = ['./image/img1.jpg', './image/img2.jpg', './image/img3.jpg', './image/img4.jpg', './image/img5.jpg'];
     this.imgCount = this.images.length;
     this.IMG_WIDTH = 400;
@@ -10,6 +10,8 @@ function Carousel(parentElement) {
     this.nextIndex = 0;
     this.slides = [];
     var that = this;
+    this.indicatorIndex = 0;
+
 
     this.init = function() {
         var carouselContainer = document.createElement('div');
@@ -52,9 +54,10 @@ function Carousel(parentElement) {
         console.log(this.imageWrapperElement);
         this.indicator();
         this.imgStyleLeft();
-        // this.prevClick();
-        // this.nextClick();
-        setInterval(this.slide(), 3000);
+        this.prevClick();
+        this.nextClick();
+        setInterval(this.slide.bind(this), 3000);
+
     }
     console.log('img count', this.imgCount);
 
@@ -77,29 +80,30 @@ function Carousel(parentElement) {
     this.prevClick = function() {
 
         this.prevbtn.addEventListener('click', function() {
-            this.nextIndex = (this.currIndex + this.imgCount - 1) % this.imgCount;
-            this.currWrapper = this.currIndex * this.IMG_WIDTH;
-            this.nextWrapper = this.nextIndex * this.IMG_WIDTH;
-            this.carouselWrapper.style.left = -this.nextWrapper + 'px';
-            console.log('currentindex', this.currIndex);
-            this.currIndex = this.nextIndex;
+            that.nextIndex = (that.currIndex + that.imgCount - 1) % that.imgCount;
+            that.currWrapper = that.currIndex * that.IMG_WIDTH;
+            that.nextWrapper = that.nextIndex * that.IMG_WIDTH;
+            // console.log('currentindex', that.imageWrapperElement);
+            that.carouselWrapper.style.left = -that.nextWrapper + 'px';
+            // console.log('currentindex', that.currIndex);
+            that.currIndex = that.nextIndex;
             var speed = 100;
             var interval = setInterval(function() {
-                if (this.nextIndex == this.imgCount - 1) {
-                    this.currWrapper += speed;
+                if (that.nextIndex == that.imgCount - 1) {
+                    that.currWrapper += speed;
                 } else {
-                    this.currWrapper -= speed;
+                    that.currWrapper -= speed;
                 }
 
-                this.carouselWrapper.style.left = -this.currWrapper + 'px';
+                that.carouselWrapper.style.left = -that.currWrapper + 'px';
                 console.log('current>>', currWrapper);
                 console.log('next>>', nextWrapper);
-                if (this.nextIndex == this.imgCount - 1) {
-                    if (this.currWrapper >= this.nextWrapper) {
+                if (that.nextIndex == that.imgCount - 1) {
+                    if (that.currWrapper >= that.nextWrapper) {
                         clearInterval(interval);
                     }
                 } else {
-                    if (this.currWrapper <= this.nextWrapper) {
+                    if (that.currWrapper <= that.nextWrapper) {
                         clearInterval(interval);
                     }
 
@@ -111,29 +115,29 @@ function Carousel(parentElement) {
     this.nextClick = function() {
         this.nextbtn.addEventListener('click', function() {
 
-            this.nextIndex = (this.currIndex + 1) % this.imgCount;
-            this.currWrapper = this.currIndex * this.IMG_WIDTH;
-            this.nextWrapper = this.nextIndex * this.IMG_WIDTH;
-            console.log('currentindex', this.currIndex);
-            this.currIndex = this.nextIndex;
+            that.nextIndex = (that.currIndex + 1) % that.imgCount;
+            that.currWrapper = that.currIndex * that.IMG_WIDTH;
+            that.nextWrapper = that.nextIndex * that.IMG_WIDTH;
+            console.log('currentindex', that.currIndex);
+            that.currIndex = that.nextIndex;
             var speed = 100;
-            console.log('currentindex', this.currIndex);
+            console.log('currentindex', that.currIndex);
             var interval = setInterval(function() {
-                if (this.nextIndex == 0) {
-                    this.currWrapper -= speed;
+                if (that.nextIndex == 0) {
+                    that.currWrapper -= speed;
                 } else {
-                    this.currWrapper += speed;
+                    that.currWrapper += speed;
                 }
 
-                this.carouselWrapper.style.left = -this.currWrapper + 'px';
-                console.log('current>>', this.currWrapper);
-                console.log('next>>', this.nextWrapper);
-                if (this.nextIndex == 0) {
-                    if (this.currWrapper <= this.nextWrapper) {
+                that.carouselWrapper.style.left = -that.currWrapper + 'px';
+                console.log('current>>', that.currWrapper);
+                console.log('next>>', that.nextWrapper);
+                if (that.nextIndex == 0) {
+                    if (that.currWrapper <= that.nextWrapper) {
                         clearInterval(interval);
                     }
                 } else {
-                    if (this.currWrapper >= this.nextWrapper) {
+                    if (that.currWrapper >= that.nextWrapper) {
                         clearInterval(interval);
                     }
 
@@ -143,32 +147,32 @@ function Carousel(parentElement) {
         })
     }
     this.slide = function() {
-        this.nextIndex = (this.currIndex + 1) % 4;
+        that.nextIndex = (that.currIndex + 1) % that.imgCount;
 
-        this.currWrapper = this.currIndex * this.IMG_WIDTH;
-        this.nextWrapper = this.nextIndex * this.IMG_WIDTH;
-        this.carouselWrapper.style.left = -this.nextWrapper + 'px';
-        console.log('currentindex', this.currIndex);
-        console.log('next', this.nextIndex);
-        this.currIndex = this.nextIndex;
+        that.currWrapper = that.currIndex * that.IMG_WIDTH;
+        that.nextWrapper = that.nextIndex * that.IMG_WIDTH;
+        that.carouselWrapper.style.left = -that.nextWrapper + 'px';
+        console.log('currentindex', that.currIndex);
+        console.log('next', that.nextIndex);
+        that.currIndex = that.nextIndex;
         var speed = 100;
 
         var interval = setInterval(function() {
-            if (this.nextIndex == 0) {
-                this.currWrapper -= speed;
+            if (that.nextIndex == 0) {
+                that.currWrapper -= speed;
             } else {
-                this.currWrapper += speed;
+                that.currWrapper += speed;
             }
 
-            this.carouselWrapper.style.left = -this.currWrapper + 'px';
-            console.log('current>>', this.currWrapper);
-            console.log('next>>', this.nextWrapper);
-            if (this.nextIndex == 0) {
-                if (this.currWrapper <= this.nextWrapper) {
+            that.carouselWrapper.style.left = -that.nextWrapper + 'px';
+            console.log('current>>', that.currWrapper);
+            console.log('next>>', that.nextWrapper);
+            if (that.nextIndex == 0) {
+                if (that.currWrapper <= that.nextWrapper) {
                     clearInterval(interval);
                 }
             } else {
-                if (this.currWrapper >= this.nextWrapper) {
+                if (that.currWrapper >= that.nextWrapper) {
                     clearInterval(interval);
                 }
 
@@ -194,9 +198,9 @@ function Carousel(parentElement) {
 
         id.forEach(function(el) {
             el.addEventListener('click', function() {
-                this.indicatorIndex = el.getAttribute('id').split('dot')[1];
-                console.log('indicator >> ', indicatorIndex);
-                this.gotoSlide(this.indicatorIndex);
+                that.indicatorIndex = el.getAttribute('id').split('dot')[1];
+                // console.log('indicator >> ', indicatorIndex);
+                that.gotoSlide(that.indicatorIndex);
             })
         })
 
@@ -211,7 +215,7 @@ function Carousel(parentElement) {
         console.log('curr index', this.currIndex);
         this.currWrapper = this.currIndex * this.IMG_WIDTH;
         this.nextWrapper = this.nextIndex * this.IMG_WIDTH;
-        this.carouselWrapper.style.left = -this.nextIndex * this.IMG_WIDTH + 'px';
+        that.carouselWrapper.style.left = -this.nextIndex * this.IMG_WIDTH + 'px';
         // this.currIndex = this.nextIndex;
     }
 
@@ -221,4 +225,5 @@ function Carousel(parentElement) {
 var parentElement = document.getElementById('main');
 carousel = new Carousel(parentElement);
 carousel.init();
+// setInterval(carousel.slide(), 3000);
 // carousel.imgStyleLeft();
