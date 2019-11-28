@@ -164,7 +164,7 @@ function Carousel(parentElement) {
                 that.currWrapper += speed;
             }
 
-            that.carouselWrapper.style.left = -that.nextWrapper + 'px';
+            that.carouselWrapper.style.left = -that.currWrapper + 'px';
             console.log('current>>', that.currWrapper);
             console.log('next>>', that.nextWrapper);
             if (that.nextIndex == 0) {
