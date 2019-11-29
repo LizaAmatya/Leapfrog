@@ -3,8 +3,8 @@
     function Ball(parentElement) {
         this.x = 10;
         this.y = 10;
-        this.posSpeed = 2;
-        this.negSpeed = -2;
+        this.posSpeed = 1;
+        this.negSpeed = -1;
         this.width = 20;
         this.height = 20;
         this.radius = this.width / 2;
