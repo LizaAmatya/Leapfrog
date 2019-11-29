@@ -3,10 +3,10 @@
     function Ball(parentElement) {
         this.x = 10;
         this.y = 10;
-        this.posSpeed = 1;
-        this.negSpeed = -1;
-        this.width = 10;
-        this.height = 10;
+        this.posSpeed = 2;
+        this.negSpeed = -2;
+        this.width = 20;
+        this.height = 20;
         this.radius = this.width / 2;
         // this.ball = null;
         this.MAX_WIDTH = 500;
@@ -20,8 +20,8 @@
             this.ball = ball;
             var ant = document.createElement('img');
             ant.src = './ant.gif';
-            ant.style.width = 30 + 'px';
-            ant.style.height = 30 + 'px';
+            ant.style.width = 20 + 'px';
+            ant.style.height = 20 + 'px';
             this.ball.appendChild(ant);
             this.ant = ant;
             this.antClicked();
