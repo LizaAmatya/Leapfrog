@@ -1,0 +1,12 @@
+.boundary {
+    height: 500px;
+    width: 500px;
+    background: #dfdfdf;
+    position: relative;
+}
+
+.ball {
+    background: blueviolet;
+    /* border-radius: 50%; */
+    position: absolute;
+}
