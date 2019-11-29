@@ -3,25 +3,38 @@
     function Ball(parentElement) {
         this.x = 10;
         this.y = 10;
-        this.posSpeed = 2;
-        this.negSpeed = -2;
+        this.posSpeed = 1;
+        this.negSpeed = -1;
         this.width = 10;
         this.height = 10;
         this.radius = this.width / 2;
         // this.ball = null;
         this.MAX_WIDTH = 500;
         this.MAX_HEIGHT = 500;
-
+        var that = this;
         this.parentElement = parentElement;
         this.init = function() {
             var ball = document.createElement('div');
             ball.classList.add('ball');
             this.parentElement.appendChild(ball);
             this.ball = ball;
-
+            var ant = document.createElement('img');
+            ant.src = './ant.gif';
+            ant.style.width = 30 + 'px';
+            ant.style.height = 30 + 'px';
+            this.ball.appendChild(ant);
+            this.ant = ant;
+            this.antClicked();
             this.draw();
 
             return this;
+        }
+
+        this.antClicked = function() {
+            that.ant.addEventListener('click', function() {
+                that.ant.style.display = 'none';
+                console.log('ant crushed');
+            })
         }
         this.draw = function() {
             this.ball.style.height = this.height + 'px';
@@ -30,13 +43,14 @@
             this.ball.style.left = this.x + 'px';
             this.ball.style.top = this.y + 'px';
 
+
+            // this.ball.style.backgroundImage = 'url("ant.gif")';
         }
 
         this.setPostion = function(x, y) {
             this.x = x;
             this.y = y;
         }
-
 
 
         this.move = function() {
@@ -65,9 +79,7 @@
     }
 
 
-    function Ant() {
 
-    }
 
     function getRandomArbitrary(min, max) {
         return Math.random() * (max - min) + min;
@@ -111,6 +123,7 @@
 
         }
 
+
         this.checkOverlap = function(ball, balls) {
             for (var i = 0; i < balls.length; i++) {
                 var x1 = balls[i].x;
@@ -151,7 +164,7 @@
                         console.log('collision detected');
                         balls[i].move();
                         balls[j].move();
-                        balls[j].replaceAnt();
+
                     }
                 }
             }
