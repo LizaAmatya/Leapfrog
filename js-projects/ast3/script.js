@@ -25,7 +25,7 @@
             this.ball.appendChild(ant);
             this.ant = ant;
             this.antClicked();
-            this.draw();
+            // this.draw();
 
             return this;
         }
