@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.road-wrapper {
+    position: relative;
+    margin: 7vh auto;
+    height: 550px;
+    width: 608px;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.road {
+    position: absolute;
+    /* left: 25%; */
+    display: block;
+    height: 830px;
+    z-index: 10;
+}
+
+.car {
+    position: absolute;
+    z-index: 20;
+    transition-property: left;
+    transition-duration: 0.2s;
+}
+
+.score-wrapper {
+    font-size: 20px;
+    z-index: 30;
+    position: absolute;
+    top: 5px;
+    left: 12px;
+}
+
+.bullet {
+    width: 10px;
+    height: 20px;
+    border-radius: 5px;
+    background: brown;
+    position: absolute;
+    z-index: 25;
+}
