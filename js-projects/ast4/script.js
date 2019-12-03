@@ -256,7 +256,7 @@ function OwnCar() {
 
 document.addEventListener('keydown', changeLane);
 var ownCar = new OwnCar().init();
-document.addEventListener('keydown', hitBullet);
+// document.addEventListener('keydown', hitBullet);
 
 function hitBullet(event) {
     if (event.keyCode === 32) {
