@@ -8,6 +8,7 @@ function Bird() {
     this.width = 34;
     this.height = 24;
     var that = this;
+
     this.init = function() {
         var flappy = new Image();
         flappy.src = '../images/redbird-midflap.png';
@@ -47,23 +48,19 @@ function Bird() {
                 (this.y <= pipe[i].y + pipeUpHeight ||
                     this.y + this.height >= pipe[i].y + distance ||
                     this.y + this.height >= canvasHeight - baseHeight)) {
-                console.log(this.x, pipe[i].x);
-                console.log('lost');
-
-                console.log(this.x + this.width, pipe[i].x,
-                    this.x, pipe[i].x + pipeUpWidth,
-                    (this.y, pipe[i].y + pipeUpHeight,
-                        this.y + this.height, pipe[i].y + distance),
-                    this.y + this.height, canvasHeight - baseHeight)
-                window.cancelAnimationFrame(step);
+                return true;
                 // location.reload(); // reload the page
 
             }
             if (pipe[i].x == 201) {
-                console.log(pipe[i]);
                 score++;
-                console.log(score);
+
             }
+            if (pipe[i].x == -37) {
+                pipe.splice(0, 1); //remove index 0 element
+                console.log(pipe);
+            }
+
         }
     }
 }

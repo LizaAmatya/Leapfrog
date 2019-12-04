@@ -11,15 +11,64 @@ var step;
 var pressedkey = false;
 var obstacle;
 var scoring;
+var screen;
+var bcg;
 
-function StartGame() {
-    var bcg = new Background().init();
-    obstacle = new Pipe().init();
-    generateBase();
-    bird = new Bird().init();
-    scoring = new Score().init();
+function draw() {
+
+    bird.drawBird();
+    checkPipe = bird.checkPipeCollision();
+    if (checkPipe) {
+        window.cancelAnimationFrame(step);
+
+        // scoring.updateHighScore();
+        // screen.restart();
+        // screen.lastScreen.addEventListener('click', function() {
+        //     resetGame();
+        // })
+
+    }
+    check = bird.checkGroundCollision();
+    if (check) {
+        window.cancelAnimationFrame(step);
+        scoring.updateHighScore();
+
+        // screen.restart();
+        // screen.lastScreen.addEventListener('click', function() {
+        //     resetGame();
+        // })
+    }
+
+    // Draw the state of the world
+}
+
+function loop(timestamp) {
+    var progress = timestamp - lastRender;
+    animateBase();
+    update(progress);
+
+    lastRender = timestamp;
+    step = window.requestAnimationFrame(loop);
+    draw();
+}
+
+function playGame() {
+    console.log('bsjbdj')
+    step = window.requestAnimationFrame(loop);
+    play.style.display = 'none';
+
 
 }
+
+// function finalStart() {
+
+//     bcg = new Background().init();
+//     generateBase();
+//     bird = new Bird().init();
+//     obstacle = new Pipe().init();
+//     scoring = new Score().init();
+//     playGame();
+// }
 
 function update(progress) {
     // Update the state of the world for the elapsed time since last render
@@ -33,35 +82,29 @@ function update(progress) {
     scoring.updateScore();
 }
 
-function draw() {
+// function resetGame() {
 
-    bird.drawBird();
-    bird.checkPipeCollision();
-    check = bird.checkGroundCollision();
-    if (check) {
-        window.cancelAnimationFrame(step);
+//     ctx.clearRect(0, 0, canvasWidth, canvasHeight);
+//     ctxt.clearRect(0, 0, canvasWidth, canvasHeight);
+//     bird = null;
+//     obstacle = null;
+//     scoring = null;
 
-    }
+//     ctx.scale(0, 0);
+//     finalStart();
 
-    // Draw the state of the world
+// }
 
-}
 
-function loop(timestamp) {
-    var progress = timestamp - lastRender;
-    animateBase();
-    update(progress);
-
-    lastRender = timestamp;
-    step = window.requestAnimationFrame(loop);
-    draw();
-}
 var lastRender = 0;
-StartGame();
-window.requestAnimationFrame(loop);
 
 document.addEventListener('keydown', jump);
 document.addEventListener('keyup', release);
+
+
+
+
+
 
 function jump(event) {
     if (event.keyCode == 38) {
@@ -74,3 +117,21 @@ function release(event) {
         pressedkey = false;
     }
 }
+var play;
+
+function StartGame() {
+    bcg = new Background().init();
+    generateBase();
+    bird = new Bird().init();
+    obstacle = new Pipe().init();
+    scoring = new Score().init();
+
+
+}
+
+
+StartGame();
+
+screen = new playScreen().init();
+play = document.getElementById('screen');
+play.addEventListener('click', playGame);

@@ -36,7 +36,7 @@ function Pipe() {
 
             pipe[i].x--;
 
-            if (pipe[i].x == 225) {
+            if (pipe[i].x == 350) {
                 pipe.push({
                     x: canvasWidth - 200,
                     y: Math.floor(Math.random() * this.pipeUp.height) - this.pipeUp.height
