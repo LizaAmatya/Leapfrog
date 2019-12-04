@@ -111,7 +111,7 @@
                 // ball.draw();
                 balls.push(ball);
             }
-            setInterval(this.moveBalls.bind(this), 10);
+            setInterval(this.moveBalls.bind(this), 30);
 
         }
         this.moveBalls = function() {
@@ -175,6 +175,4 @@
 
     var parentElement = document.getElementById('boundary');
     var game = new Game(parentElement, 10).createBalls();
-
-
 })();

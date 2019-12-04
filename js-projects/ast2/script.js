@@ -56,7 +56,7 @@ function Carousel(parentElement) {
         this.imgStyleLeft();
         this.prevClick();
         this.nextClick();
-        setInterval(this.slide.bind(this), 3000);
+        setInterval(this.slide.bind(this), 5000);
 
     }
     console.log('img count', this.imgCount);
@@ -155,7 +155,7 @@ function Carousel(parentElement) {
         console.log('currentindex', that.currIndex);
         console.log('next', that.nextIndex);
         that.currIndex = that.nextIndex;
-        var speed = 100;
+        var speed = 5;
 
         var interval = setInterval(function() {
             if (that.nextIndex == 0) {
@@ -177,7 +177,7 @@ function Carousel(parentElement) {
                 }
 
             }
-        }, 10)
+        }, 100)
     }
 
     this.indicator = function() {

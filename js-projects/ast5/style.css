@@ -1,0 +1,34 @@
+* {
+    margin: 0 auto;
+}
+
+.main {
+    position: relative;
+    width: 1000px;
+    height: 600px;
+    z-index: 5;
+    overflow: hidden;
+}
+
+.canvas {
+    height: 429px;
+    width: 1000px;
+    position: relative;
+    display: block;
+    z-index: 10;
+}
+
+.bcg {
+    margin: 0;
+    position: absolute;
+    top: 0;
+    float: left;
+    height: 429px;
+    width: 1000px;
+}
+
+.bcg-base {
+    position: absolute;
+    top: 429px;
+    float: left;
+}

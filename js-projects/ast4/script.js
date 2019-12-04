@@ -60,8 +60,6 @@ function createLane() {
 
 this.displayedCars = [];
 
-
-
 function drawCars() {
     var car1 = new Car().init();
     // var car2 = new Car().init();
