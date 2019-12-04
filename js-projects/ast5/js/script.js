@@ -1,5 +1,5 @@
 var main = document.getElementById('main');
-var score = 0;
+
 var canvas = document.getElementById('canvas');
 canvasWidth = 1000;
 canvasHeight = 429;
@@ -10,12 +10,15 @@ var check;
 var step;
 var pressedkey = false;
 var obstacle;
+var scoring;
 
 function StartGame() {
     var bcg = new Background().init();
     obstacle = new Pipe().init();
     generateBase();
     bird = new Bird().init();
+    scoring = new Score().init();
+
 }
 
 function update(progress) {
@@ -27,7 +30,7 @@ function update(progress) {
         bird.newPos()
     };
     obstacle.drawPipe();
-
+    scoring.updateScore();
 }
 
 function draw() {

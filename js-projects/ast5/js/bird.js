@@ -40,12 +40,16 @@ function Bird() {
     }
     this.checkPipeCollision = function() {
         for (var i = 0; i < pipe.length; i++) {
-            if ((this.x + this.width) >= pipe[i].x &&
-                (this.x <= pipe[i].x) + pipeUpWidth &&
+
+
+            if ((this.x + this.width >= pipe[i].x &&
+                    this.x <= pipe[i].x + pipeUpWidth) &&
                 (this.y <= pipe[i].y + pipeUpHeight ||
-                    this.y + this.height >= pipe[i].y + distance) ||
-                this.y + this.height >= canvasHeight - baseHeight) {
+                    this.y + this.height >= pipe[i].y + distance ||
+                    this.y + this.height >= canvasHeight - baseHeight)) {
+                console.log(this.x, pipe[i].x);
                 console.log('lost');
+
                 console.log(this.x + this.width, pipe[i].x,
                     this.x, pipe[i].x + pipeUpWidth,
                     (this.y, pipe[i].y + pipeUpHeight,
@@ -55,7 +59,7 @@ function Bird() {
                 // location.reload(); // reload the page
 
             }
-            if (pipe[i].x == 1) {
+            if (pipe[i].x == 201) {
                 console.log(pipe[i]);
                 score++;
                 console.log(score);
