@@ -15,12 +15,12 @@ function Pipe() {
 
     this.init = function() {
         var pipeUp = new Image();
-        pipeUp.src = '../images/pipe-up.png';
+        pipeUp.src = 'images/pipe-up.png';
         this.pipeUp = pipeUp;
         this.pipeUp.height = pipeUpHeight;
 
         var pipeDown = new Image();
-        pipeDown.src = '../images/pipe-down.png';
+        pipeDown.src = 'images/pipe-down.png';
         this.pipeDown = pipeDown;
 
         return this;

@@ -5,7 +5,7 @@ function Background() {
 
     this.init = function() {
         var bcg = document.createElement('img');
-        bcg.src = '../images/bcg.png';
+        bcg.src = 'images/bcg.png';
         bcg.classList.add('bcg');
         main.appendChild(bcg);
         this.element = bcg;
@@ -22,7 +22,7 @@ function BackgroundBase(left) {
 
     this.init = function() {
         var bcgBase = document.createElement('img');
-        bcgBase.src = '../images/bcg-base.png';
+        bcgBase.src = 'images/bcg-base.png';
         bcgBase.classList.add('bcg-base');
         main.appendChild(bcgBase);
         this.element = bcgBase;
