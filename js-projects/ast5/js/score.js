@@ -45,7 +45,7 @@ function playScreen() {
         var firstScreen = document.createElement('img');
         firstScreen.classList.add('screen');
         firstScreen.id = 'screen';
-        firstScreen.src = '../images/play.png';
+        firstScreen.src = 'images/play.png';
         main.appendChild(firstScreen);
         return this;
     }
@@ -55,7 +55,7 @@ function playScreen() {
         this.lastScreen = lastScreen;
         lastScreen.classList.add('screen');
         lastScreen.id = 'restart-screen';
-        lastScreen.src = '../images/restart.png';
+        lastScreen.src = 'images/restart.png';
         console.log(lastScreen);
         main.appendChild(lastScreen);
 

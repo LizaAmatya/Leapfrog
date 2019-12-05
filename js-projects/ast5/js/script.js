@@ -53,7 +53,7 @@ function loop(timestamp) {
 }
 
 function playGame() {
-    console.log('bsjbdj')
+    // console.log('bsjbdj')
     step = window.requestAnimationFrame(loop);
     play.style.display = 'none';
 
