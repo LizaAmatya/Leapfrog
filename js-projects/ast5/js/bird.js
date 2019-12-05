@@ -11,7 +11,7 @@ function Bird() {
 
     this.init = function() {
         var flappy = new Image();
-        flappy.src = '../images/redbird-midflap.png';
+        flappy.src = 'images/redbird-midflap.png';
         this.flappy = flappy;
         ctx.scale(0.5, 0.5);
         return this;
