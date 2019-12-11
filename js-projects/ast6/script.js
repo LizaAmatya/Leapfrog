@@ -45,9 +45,6 @@ function draw() {
         }
 
     }
-
-
-
     window.requestAnimationFrame(draw);
 
 }
