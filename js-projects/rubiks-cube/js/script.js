@@ -3,9 +3,6 @@ var ctx = canvas.getContext("2d");
 var height = canvas.height = 400;
 var width = canvas.width = 400;
 
-var vertical = 1;
-var horizontal = 1;
-
 var worldTransform = { x: 0, y: 0, z: 6, xrot: 0, yrot: 0, zrot: 0 };
 
 var flag = 0;

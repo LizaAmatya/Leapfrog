@@ -1,3 +1,5 @@
+var vertical = 1;
+var horizontal = 1;
 var queue = [];
 
 var Point = function(x, y, z) {
