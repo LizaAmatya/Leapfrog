@@ -13,5 +13,11 @@
     margin: 0 auto;
     padding: 0;
     position: relative;
-    top: 30%;
+    top: 35%;
+}
+
+h3 {
+    padding-top: 10px;
+    height: 100px;
+    color: aliceblue;
 }
