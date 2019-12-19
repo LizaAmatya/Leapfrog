@@ -101,11 +101,6 @@ var lastRender = 0;
 document.addEventListener('keydown', jump);
 document.addEventListener('keyup', release);
 
-
-
-
-
-
 function jump(event) {
     if (event.keyCode == 38) {
         pressedkey = true;
