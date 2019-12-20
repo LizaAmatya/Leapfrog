@@ -44,7 +44,7 @@ function Cube(xpos, ypos, zpos, rotx, roty, rotz) {
 
                 var point = this.points[faces[x][y]];
                 point = point.translate(this.x, this.y, this.z).rotateX(this.rotx).rotateY(this.roty).rotateX(worldTransform.xrot).rotateY(worldTransform.yrot).translate(worldTransform.x, worldTransform.y, worldTransform.z);
-                // point = point.translate(this.x, this.y, this.z).rotateX(this.rotx).rotateY(this.roty).rotateZ(this.rotz).rotateX(worldTransform.xrot).rotateY(worldTransform.yrot).rotateZ(worldTransform.zrot).translate(worldTransform.x, worldTransform.y, worldTransform.z);
+
 
                 if (flag == 1) {
                     var point = this.points[faces[x][y]];
