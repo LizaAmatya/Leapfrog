@@ -38,4 +38,5 @@ document.addEventListener('keydown', function(event) {
     if (event.keyCode === 40) {
         flag = 2;
     }
+
 })

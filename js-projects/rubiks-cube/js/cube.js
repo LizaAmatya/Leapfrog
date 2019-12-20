@@ -28,8 +28,11 @@ function Cube(xpos, ypos, zpos, rotx, roty, rotz) {
                 this.points.push(new Point(x, y, z));
 
     this.rotateColors = function(xrot, yrot, zrot) {
+
         for (var i = 0; i < xrot; i++)
             this.faceMatrix = [this.faceMatrix[0], this.faceMatrix[2], this.faceMatrix[3], this.faceMatrix[4], this.faceMatrix[1], this.faceMatrix[5]];
+
+        // this.faceMatrix = [this.faceMatrix[0], this.faceMatrix[2], this.faceMatrix[3], this.faceMatrix[4], this.faceMatrix[1], this.faceMatrix[5]];
         for (var i = 0; i < yrot; i++)
             this.faceMatrix = [this.faceMatrix[2], this.faceMatrix[1], this.faceMatrix[5], this.faceMatrix[3], this.faceMatrix[0], this.faceMatrix[4]];
         for (var i = 0; i < zrot; i++)
@@ -43,15 +46,24 @@ function Cube(xpos, ypos, zpos, rotx, roty, rotz) {
             for (var y = 0; y < 4; y++) {
 
                 var point = this.points[faces[x][y]];
-                point = point.translate(this.x, this.y, this.z).rotateX(this.rotx).rotateY(this.roty).rotateX(worldTransform.xrot).rotateY(worldTransform.yrot).translate(worldTransform.x, worldTransform.y, worldTransform.z);
+                point = point.translate(this.x, this.y, this.z);
+                // point = point.rotateX(this.rotx).rotateY(this.roty);
+                point = point.rotateX(worldTransform.xrot).rotateY(worldTransform.yrot).rotateZ(worldTransform.zrot);
+                point = point.translate(worldTransform.x, worldTransform.y, worldTransform.z);
 
 
                 if (flag == 1) {
                     var point = this.points[faces[x][y]];
-                    point = point.translate(this.x, this.y, this.z).rotateX(this.rotx).rotateX(worldTransform.xrot).rotateY(worldTransform.yrot).translate(worldTransform.x, worldTransform.y, worldTransform.z);
+                    point = point.translate(this.x, this.y, this.z);
+                    point = point.rotateX(this.rotx);
+                    point = point.rotateX(worldTransform.xrot).rotateY(worldTransform.yrot).rotateZ(worldTransform.zrot);
+                    point = point.translate(worldTransform.x, worldTransform.y, worldTransform.z);
                 } else if (flag == 2) {
                     var point = this.points[faces[x][y]];
-                    point = point.translate(this.x, this.y, this.z).rotateY(this.roty).rotateX(worldTransform.xrot).rotateY(worldTransform.yrot).translate(worldTransform.x, worldTransform.y, worldTransform.z);
+                    point = point.translate(this.x, this.y, this.z);
+                    point = point.rotateY(this.roty);
+                    point = point.rotateX(worldTransform.xrot).rotateY(worldTransform.yrot).rotateZ(worldTransform.zrot);
+                    point = point.translate(worldTransform.x, worldTransform.y, worldTransform.z);
 
                 }
                 vertex.push(point);
