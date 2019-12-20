@@ -44,7 +44,7 @@ function startAnimation(obj) {
 function updateAnimation(obj) {
     obj.animationTimer--;
     var currRotation = animationTimeCalc(animationDuration - obj.animationTimer, obj.rotationAmount * Math.PI / 2, animationDuration);
-    console.log(obj.slice);
+    // console.log(obj.slice);
     for (var i = 0; i < 9; i++) {
         if (obj.slice < 3)
             obj.cubelets[blocks[obj.slice][i]].rotx = currRotation;
