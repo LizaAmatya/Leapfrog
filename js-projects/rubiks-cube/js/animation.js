@@ -32,7 +32,7 @@ function startAnimation(obj) {
 
         obj.slice = parseInt(Math.random() * 3);
     } else if (flag == 2) {
-        obj.slice = parseInt(Math.random() * 9);
+        obj.slice = parseInt(Math.random() * 6);
     }
 
     obj.rotationAmount = (parseInt(Math.random() * 2) + 1);
