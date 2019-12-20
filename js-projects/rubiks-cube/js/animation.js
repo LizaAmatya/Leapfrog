@@ -1,7 +1,6 @@
 var animationDuration = 50;
 var animationTimer = null;
 
-//vertices for a whole rotating block(X or Y) 6 blocks considering 4 sides  
 
 var blocks = [
     [2, 1, 0, 5, 4, 3, 8, 7, 6],
