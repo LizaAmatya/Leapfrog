@@ -3,7 +3,7 @@ var animationTimer = null;
 
 //vertices for a whole rotating block(X or Y) 6 blocks considering 4 sides  
 
-var squares = [
+var blocks = [
     [2, 1, 0, 5, 4, 3, 8, 7, 6],
     [11, 10, 9, 14, 13, 12, 17, 16, 15],
     [20, 19, 18, 23, 22, 21, 26, 25, 24],
@@ -42,11 +42,11 @@ function updateAnimation(obj) {
 
     for (var i = 0; i < 9; i++) {
         if (obj.slice < 3)
-            obj.cubelets[squares[obj.slice][i]].rotx = currRotation;
+            obj.cubelets[blocks[obj.slice][i]].rotx = currRotation;
         else if (obj.slice < 6)
-            obj.cubelets[squares[obj.slice][i]].roty = currRotation;
+            obj.cubelets[blocks[obj.slice][i]].roty = currRotation;
         else
-            obj.cubelets[squares[obj.slice][i]].rotz = currRotation;
+            obj.cubelets[blocks[obj.slice][i]].rotz = currRotation;
     }
 };
 
@@ -61,15 +61,15 @@ function endAnimation(obj) {
     for (var i = 0; i < 9; i++) {
 
         if (obj.slice < 3)
-            obj.cubelets[squares[obj.slice][i]].rotateColors(value, 0, 0);
+            obj.cubelets[blocks[obj.slice][i]].rotateColors(value, 0, 0);
         else if (obj.slice < 6)
-            obj.cubelets[squares[obj.slice][i]].rotateColors(0, value, 0);
+            obj.cubelets[blocks[obj.slice][i]].rotateColors(0, value, 0);
         else
-            obj.cubelets[squares[obj.slice][i]].rotateColors(0, 0, value);
+            obj.cubelets[blocks[obj.slice][i]].rotateColors(0, 0, value);
 
-        obj.cubelets[squares[obj.slice][i]].rotx = 0;
-        obj.cubelets[squares[obj.slice][i]].roty = 0;
-        obj.cubelets[squares[obj.slice][i]].rotz = 0;
+        obj.cubelets[blocks[obj.slice][i]].rotx = 0;
+        obj.cubelets[blocks[obj.slice][i]].roty = 0;
+        obj.cubelets[blocks[obj.slice][i]].rotz = 0;
     }
 }
 
@@ -81,17 +81,17 @@ function fixColors(obj) {
         value = 2;
 
     for (var x = 0; x < value; x++) {
-        var temp = obj.cubelets[squares[obj.slice][0]].faceMatrix.slice();
-        obj.cubelets[squares[obj.slice][0]].faceMatrix = obj.cubelets[squares[obj.slice][6]].faceMatrix.slice();
-        obj.cubelets[squares[obj.slice][6]].faceMatrix = obj.cubelets[squares[obj.slice][8]].faceMatrix.slice();
-        obj.cubelets[squares[obj.slice][8]].faceMatrix = obj.cubelets[squares[obj.slice][2]].faceMatrix.slice();
-        obj.cubelets[squares[obj.slice][2]].faceMatrix = temp.slice();
+        var temp = obj.cubelets[blocks[obj.slice][0]].faceMatrix.slice();
+        obj.cubelets[blocks[obj.slice][0]].faceMatrix = obj.cubelets[blocks[obj.slice][6]].faceMatrix.slice();
+        obj.cubelets[blocks[obj.slice][6]].faceMatrix = obj.cubelets[blocks[obj.slice][8]].faceMatrix.slice();
+        obj.cubelets[blocks[obj.slice][8]].faceMatrix = obj.cubelets[blocks[obj.slice][2]].faceMatrix.slice();
+        obj.cubelets[blocks[obj.slice][2]].faceMatrix = temp.slice();
 
-        temp = obj.cubelets[squares[obj.slice][1]].faceMatrix.slice();
-        obj.cubelets[squares[obj.slice][1]].faceMatrix = obj.cubelets[squares[obj.slice][3]].faceMatrix.slice();
-        obj.cubelets[squares[obj.slice][3]].faceMatrix = obj.cubelets[squares[obj.slice][7]].faceMatrix.slice();
-        obj.cubelets[squares[obj.slice][7]].faceMatrix = obj.cubelets[squares[obj.slice][5]].faceMatrix.slice();
-        obj.cubelets[squares[obj.slice][5]].faceMatrix = temp.slice();
+        temp = obj.cubelets[blocks[obj.slice][1]].faceMatrix.slice();
+        obj.cubelets[blocks[obj.slice][1]].faceMatrix = obj.cubelets[blocks[obj.slice][3]].faceMatrix.slice();
+        obj.cubelets[blocks[obj.slice][3]].faceMatrix = obj.cubelets[blocks[obj.slice][7]].faceMatrix.slice();
+        obj.cubelets[blocks[obj.slice][7]].faceMatrix = obj.cubelets[blocks[obj.slice][5]].faceMatrix.slice();
+        obj.cubelets[blocks[obj.slice][5]].faceMatrix = temp.slice();
     }
 }
 
