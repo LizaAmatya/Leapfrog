@@ -28,7 +28,12 @@ function animationTimeCalc(timeDiff, rotationCounter, duration) {
 
 function startAnimation(obj) {
     //random block
-    obj.slice = parseInt(Math.random() * 9);
+    if (flag == 1) {
+
+        obj.slice = parseInt(Math.random() * 3);
+    } else if (flag == 2) {
+        obj.slice = parseInt(Math.random() * 9);
+    }
 
     obj.rotationAmount = (parseInt(Math.random() * 2) + 1);
     if (Math.random() * 2 > 1)
