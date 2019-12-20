@@ -1,5 +1,3 @@
-var vertical = 1;
-var horizontal = 1;
 var queue = [];
 
 var Point = function(x, y, z) {
@@ -9,8 +7,9 @@ var Point = function(x, y, z) {
 
     this.project = function() {
         return new Point(
-            width * (this.x / (this.z * 2 * Math.tan(vertical / 2)) + 1 / 2),
-            height * (this.y / (this.z * 2 * Math.tan(horizontal / 2)) + 1 / 2)
+
+            width * (this.x / (this.z * 2 * Math.tan(1 / 2)) + 1 / 2),
+            height * (this.y / (this.z * 2 * Math.tan(1 / 2)) + 1 / 2)
         );
     }
 
