@@ -12,7 +12,7 @@ var main = new Rubix();
 var draw = function() {
     ctx.clearRect(0, 0, width, height);
 
-    worldTransform.xrot = 45;
+    worldTransform.xrot = 40;
     worldTransform.yrot = 10;
     worldTransform.zrot = 50;
 
